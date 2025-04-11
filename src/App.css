@@ -1,6 +1,14 @@
+
+
 .App {
   text-align: center;
 }
+
+
+  .btn-custom {
+    @apply text-lg bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600;
+  }
+
 
 .App-logo {
   height: 40vmin;
