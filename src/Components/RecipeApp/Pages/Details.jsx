@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { GlobalContext } from "../Context";
+import { Link } from "react-router-dom";
 
 export default function Details() {
   const { recipeDetails, handleRecipeDetails, handleFavorite, favorite } =
@@ -18,7 +19,7 @@ export default function Details() {
 
   if (!recipeDetails?.data?.recipe) {
     return <p className="text-center text-lg font-semibold">Loading...</p>;
-  }   
+  }
 
   return (
     <div className="max-w-5xl mx-auto p-6">
@@ -59,6 +60,12 @@ export default function Details() {
         >
           {favorite.includes(id.toString()) ? "Unfavorite" : "Favorite"}
         </button>
+        <Link
+          to="/favorites"
+          className="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 ml-10"
+        >
+          View Favorites
+        </Link>
       </div>
     </div>
   );
