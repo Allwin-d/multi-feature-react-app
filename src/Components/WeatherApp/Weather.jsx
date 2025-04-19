@@ -6,7 +6,8 @@ const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const APIkey = "62e69bb0b578cdf026047937204853a0";
+  const APIkey = process.env.REACT_APP_WEATHER_API_KEY;
+
 
   function originalValue(event) {
     setSearch(event.target.value);

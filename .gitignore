@@ -12,6 +12,10 @@
 /build
 
 # misc
+node_modules
+.env
+build
+dist
 .DS_Store
 .env.local
 .env.development.local
