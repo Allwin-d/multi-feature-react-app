@@ -43,6 +43,8 @@ Tailwind CSS or custom CSS
 
 External APIs (e.g., FakeStoreAPI, Forkify API, Weather API)
 
+Vercel Link: https://multi-feature-react-app-git-main-allwin7s-projects.vercel.app
+
 
 🔗 APIs Used :
 FakeStoreAPI
